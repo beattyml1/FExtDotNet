@@ -4,6 +4,7 @@ Functional Extensions Methods for C#
 ## Functional Transformation/Composition Extensions
 ### Transform
 Forward pipe, like F# and Elixir's |> operator. 
+
 Usage:
 ```
 var x = value.Transform(function1);
@@ -24,7 +25,7 @@ var x = value
 ```
 
 ### Compose
-Compose/chain multiple functions together into a single function
+Compose/chain multiple functions together into a single function. Like F#'s >> operator
 ```
 var func = function1.Compose(function2.Parameterize(1, "Testing"));
 var func = function1.Compose(function2, function3);
